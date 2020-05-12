@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Computer Science - xwu426</title>
+        <link rel="shortcut icon" href="images/xwicon.ico" type="image/xicon"/>
+        <script src="js/jsFile.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/cssFile.css">
+        <link rel="stylesheet" type="text/css" href="css/blocks.css">
+    </head>
+    
+    <body> 
+        <div class="wapper">
+            <section>
+                <div class="banner">
+                    <img class="banner" src="images/IMG_0070.jpg" alt="banner1" style="width:100%">
+                </div>
+                <h1>Computer Science</h1>
+                <ul class="border">
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#Courses">Courses</a></li>
+                  <li><a href="#References">References</a></li>
+                  <li style="float:right"><a class="active" href="#Contact">Contact</a></li>
+                </ul>
+            </section>
+            <section>
+                <a name="About"></a>
+                <p class="name">About the Program</p>
+                <p class="i1">
+                    The <a href="https://www.csd.uwo.ca/" target="_blank">Computer Science Program</a> give student a chance to using and improving computers as tools for the skill they live in the morden society. Student will be study in programming, data stuctures and analysis in the first two year. After learning the basic programming skill, students can choose more focused courses to dicide the careers they will take after graduate. Computer Science is easy to find job after graduate, student can move into high-tech carreers as software engineers, eyetems analysts, technical writers, web developers, researchers, programmers, and software testers.
+                </p>
+                <div class="row i1">
+                    <div class="column"><img class="rounded-pic" src="images/computerscience1.jpg" style="width:100%"></div>
+                    <div class="column"><img class="rounded-pic" src="images/computerscience2.jpg" style="width:100%"></div>
+                </div>
+            </section>
+            <section>
+                <a name="Courses"></a>
+                <p class="name">Courses</p>
+                <h3>CS1026</h3>
+                <p class="i2">
+                    This course provides an introduction to the basic concepts of computer programming and program design. It is intended for students who have interest in learning basic programming skills including those who intend to study Computer Science. This course teaches you how to use python to program and learn the basic algorithem of the programming world, it is the first acdamic course in computer science department and also it's the esaiest course in computer science.
+                </p>
+                <img class="i3" src="images/computerscience3.jpg" alt="pythone picture">
+                <hr>
+                <h3>CS1011</h3>
+                <p class="i2">
+                    The technological successes that have led to the Internet's wide adoption for work and social purposes. The ways in which computer technology has led to more compact representation of data, and faster, more reliable and more secure communication. Intended primarily for students not in Computer Science. This course provides an introduction to the basic concepts of front-ended programming and design. The course will give student a chance to design the webpages by using html, css and javascript. It is the easiest begining course of front-ended programming.
+                </p>
+                <img class="i3" src="images/computerscience4.jpeg" alt="html picture">
+                <hr>
+                <h3>CS1033</h3>
+                <p class="i2">
+                    This course is an introduction to multimedia concepts and explores the use of different types of media components (text, images, sound, animation and video) to convey ideas and facilitate interaction delivered through a web site. Topics include design considerations and media creation/editing tools for creating websites, graphics, sound, animation and video files. This course has a theoretical and a practical component. Media components will be studied at a theoretical level, and students will have the opportunity to practice their skills by using software to create graphics, animation, movies, and web sites. There are no prerequisites for this course however the student must be familiar with the PC platform (any Windows operating system) and with the basic skills of computer use and file management. 
+                </p>
+                <img class="i3" src="images/computerscience5.jpeg" alt="multimedia picture">
+                <hr>
+            </section>
+            <section>
+                <a name="Contact"></a>
+                <p class="name">Contact</p>
+                <p class="i3">Input contact information below:</p>
+                    <form>
+                        <div id="name" class="borderColor">
+                            <label for="fullname" class="textbox">Full Name:</label>
+                        </div>
+                        <input type="text" name="fullname" id="fullname" onblur="characterNumberCheck();" required /><br/>
+                        <div id="inputemail" class="borderColor">
+                            <label for="email" class="textbox">Email: </label>
+                        </div>
+                        <input type="text" name="email" id="email" onblur="checkEmailNumber();" required /><br>
+                        <label for="phonenum" class="textbox">Phone Number: </label>
+                        <input type="number" name="phonenum" id="phonenum" required />
+                        
+                        <p>Current education:</p>
+                        <input type="radio" name="education" id="Highschool" required />
+                        <label for="Highschool">High school</label>
+                        <input type="radio" name="education" id="College" required />
+                        <label for="College">College</label>
+                        <input type="radio" name="education" id="University" required />
+                        <label for="University">University</label>
+                        <input type="radio" name="education" id="Other" required />
+                        <label for="Other">Other</label>
+                        <input type="radio" name="education" id="None" required />
+                        <label for="None">None</label>
+                        
+                        <p>Interests:</p>
+                        <input type="checkbox" name="intrest" value="Programming" required />
+                        <label for="Programming">Programming</label>
+                        <input type="checkbox" name="intrest" value="FrontEnd" required />
+                        <label for="FrontEnd">Front-ended develop</label>
+                        <input type="checkbox" name="intrest" value="BackEnd" required />
+                        <label for="BackEnd">Back-ended develop</label>
+                        <input type="checkbox" name="intrest" value="Game" required />
+                        <label for="Game">Game develop</label>
+                        <input type="checkbox" name="intrest" value="Database" required />
+                        <label for="Database">Database analyse</label>
+                        <input type="checkbox" name="intrest" value="Phone" required />
+                        <label for="Phone">Phone app develop</label>
+                        
+                        <p>Country:</p>
+                        <input type="radio" name="country" id="canada" onclick="countryCheck()" required />
+                        <label for="canada">Canada</label>
+                        <input type="radio" name="country" id="us" onclick="countryCheck()" required />
+                        <label for="us">US</label>
+                        <input type="radio" name="country" id="other" onclick="countryCheck()" required />
+                        <label for="other">Other</label><br/>
+                        <div id="canadas" style="visibility:hidden">
+                            <label for="fullname" class="textbox">Postal code:</label>
+                            <input type="text" name="postcode" id="postcode" />
+                        </div>
+                        <div id="uss" style="visibility: hidden">
+                            <label for="fullname" class="textbox">Zip code:</label>
+                            <input type="text" name="zipcode" id="zipcode" />
+                        </div>
+                        <input type="submit" class="i4" name="submit" value="Submit!" />
+                        <p>Email us if have more question! <a href="mailto:email@email.com">email@email.com</a></p>
+                    </form>
+            </section>
+            <section>
+                <a name="References"></a>
+                <p class="name">References</p>
+                <p><a href="https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/" target="_blank">This picture is fond online at a copywrite free webside for indecate the computer science program. https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/</a><p></p>
+                <hr>
+                <p> <a href="https://www.pexels.com/photo/blur-computer-connection-electronics-442150/" target="_blank">This picture is fond online at a copywrite free webside for indecate the computer science program. https://www.pexels.com/photo/blur-computer-connection-electronics-442150/</a></p>
+                <hr>
+                <p> <a href="https://www.pexels.com/photo/book-computer-design-development-326424/" target="_blank">This picture is fond online at a copywrite free webside for indecate Course 1011 that teaches HTML and CSS. https://www.pexels.com/photo/book-computer-design-development-326424/</a></p>
+                <hr>
+                <p> <a href="https://stock.adobe.com/ca/images/python-programming-language-web-development-coding-concept/142934730?as_channel=affiliate&as_campaign=pexels&as_source=arvato&tduid=b660cc6ad47512c7239b3facca9497c4&as_channel=affiliate&as_campclass=redirect&as_source=arvato" target="_blank">This picture is fond online at a copywrite free webside for indecate Course 1026 that teaches Python programming. <br>https://stock.adobe.com/ca/images/python-programming-language-web-development-coding-concept/142934730?as_channel=affiliate&as_campaign=pexels&as_source=arvato&tduid=b660cc6ad47512c7239b3facca9497c4&as_channel=affiliate&as_campclass=redirect&as_source=arvato</a></p>
+                <hr>
+                <p> <a href="https://www.pexels.com/photo/person-operating-macbook-pro-955405/" target="_blank">This picture is fond online at a copywrite free webside for indecate Course 1033 that introduce the multimedia. https://www.pexels.com/photo/person-operating-macbook-pro-955405/</a></p>
+                <hr>
+                <p> <a href="https://www.favicon.cc/" target="_blank">This is the webside to create the favicon https://www.favicon.cc/</a></p>
+                <hr>
+                <p>The banner picture is taken by me</p>
+                <hr>
+                <p>&#169;xwu426</p>
+            </section>
+        </div>
+    </body>
+
+
+
+
+
+
+
+
+</html>
